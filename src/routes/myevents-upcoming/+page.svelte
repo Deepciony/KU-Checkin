@@ -45,7 +45,40 @@
             location: "Kasetsart University, Sriracha",
             image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600&auto=format&fit=crop",
             pincode: "99999",
-            status: "checked-in",
+            status: "cancel",
+            type: "history",
+        },
+        {
+            id: 5,
+            title: "KASETSART RUN OF HEALTH",
+            date: "Sunday, January 14, 2024",
+            time: "05:00 AM - 09:00 AM",
+            location: "Kasetsart University, Sriracha",
+            image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600&auto=format&fit=crop",
+            pincode: "99999",
+            status: "completed",
+            type: "history",
+        },
+        {
+            id: 6,
+            title: "KASETSART RUN OF HEALTH",
+            date: "Sunday, January 14, 2024",
+            time: "05:00 AM - 09:00 AM",
+            location: "Kasetsart University, Sriracha",
+            image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600&auto=format&fit=crop",
+            pincode: "99999",
+            status: "completed",
+            type: "history",
+        },
+        {
+            id: 7,
+            title: "KASETSART RUN OF HEALTH",
+            date: "Sunday, January 14, 2024",
+            time: "05:00 AM - 09:00 AM",
+            location: "Kasetsart University, Sriracha",
+            image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600&auto=format&fit=crop",
+            pincode: "99999",
+            status: "completed",
             type: "history",
         }
     ];
@@ -57,6 +90,7 @@
             case 'joined': return 'background-color: #0066FF; color: white;';
             case 'checked-in': return 'background-color: #FFE600; color: black;';
             case 'completed': return 'background-color: #10B981; color: white;';
+            case 'cancel': return 'background-color: #b4151d; color: white;';
             default: return 'background-color: gray;';
         }
     };
@@ -65,6 +99,7 @@
         if (status === 'joined') return 'Joined';
         if (status === 'checked-in') return 'Checked-in';
         if (status === 'completed') return 'Completed';
+        if (status === 'cancel') return 'Cancel';
         return status;
     };
     
@@ -115,7 +150,7 @@
                     <div class = "info-row">
                         <span class = "icon">📍</span> <span>Location: {event.location}</span>
                     </div>
-                    {#if event.status !== 'joined'}
+                    {#if event.status !== 'joined' && event.type !== 'history'}
                         <div class = "info-row">
                             <span class = "icon">🔢</span> <span>Pin code: {event.pincode}</span>
                         </div>
@@ -296,6 +331,10 @@
         font-weight: 600;
         font-family: 'Inter', sans-serif;
         cursor: pointer;
+
+        width: 130px;
+        text-align: center;
+        display: inline-block;
     }
 
 

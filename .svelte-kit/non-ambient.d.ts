@@ -61,6 +61,6 @@ declare module "$app/types" {
 		};
 		Pathname(): "/" | "/createevent-officer-2" | "/createevent-officer-2/" | "/createevent-officer" | "/createevent-officer/" | "/eventlist-1" | "/eventlist-1/" | "/eventlist-2" | "/eventlist-2/" | "/eventlist-3" | "/eventlist-3/" | "/eventlist" | "/eventlist/" | "/eventverify-officer" | "/eventverify-officer/" | "/login" | "/login/" | "/monthly-reward-completed-user" | "/monthly-reward-completed-user/" | "/monthly-reward-inprogress-user" | "/monthly-reward-inprogress-user/" | "/monthly-reward" | "/monthly-reward/" | "/myevents-history" | "/myevents-history/" | "/myevents-upcoming-2" | "/myevents-upcoming-2/" | "/myevents-upcoming" | "/myevents-upcoming/" | "/notFound" | "/notFound/" | "/register-officer" | "/register-officer/" | "/register-student" | "/register-student/" | "/reset-password-2" | "/reset-password-2/" | "/reset-password-3" | "/reset-password-3/" | "/reset-password-4" | "/reset-password-4/" | "/reset-password" | "/reset-password/" | "/setting-account-officer" | "/setting-account-officer/" | "/setting-account-student" | "/setting-account-student/" | "/upload-proof-officer-2" | "/upload-proof-officer-2/" | "/upload-proof-officer" | "/upload-proof-officer/";
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
-		Asset(): string & {};
+		Asset(): "/logo-ku.png" | string & {};
 	}
 }
